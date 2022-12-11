@@ -1,0 +1,267 @@
+/* body{
+  
+    background-color: rgb(74, 9, 238);
+}
+
+li{
+    text-align: center;
+
+    text-decoration: underline;
+
+    text-transform: uppercase;
+
+    letter-spacing: 4px;
+
+    line-height: 40px;
+
+    text-shadow: 1px 0px blue;
+    word-spacing: 5px;
+
+    font-size:45px ;
+
+    font-family:'Times New Roman', Times, serif ;
+
+    font-style: italic;
+}
+ */
+
+ * {
+    margin: 0px;
+ }
+    header {
+    background-color: #ff7722;
+    width: 98%;
+    height: 200px;
+    box-shadow: 16px 10px 18px black;
+    position: sticky;
+    border-radius: 10px;
+    margin-left: 8px;
+    margin-top: 5px;
+    }
+    
+    .navlink {
+    display: flex;
+    flex-direction: row;
+    
+    }
+    
+    
+    header a {
+    box-sizing: content-box;
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 4px;
+    background-color: white;
+    color: #1b02fa;
+    margin-left: 50px;
+    text-align: center;
+    box-shadow: inset 0px 1px 10px black;
+    }
+    
+    #searchbar1 {
+    margin-left: 120px;
+    padding: 15px;
+    box-shadow: inset 0px 1px 10px black;
+    }
+    
+    .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    
+    padding: 10px;
+    margin-top: 60px;
+    grid-gap: 9px;
+    height: 800px;
+    }
+    
+    .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    }
+    
+    
+    #item1 {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    height: 500px;
+    width: 500px;
+    background-image: url(https://images.unsplash.com/photo-1507668077129-56e32842fceb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 11px 5px 20px 0px #5c5b5b;
+    }
+    
+    #item7 {
+    grid-row-start: 3;
+    grid-row-end: 10; 
+    width: 500px;
+    box-shadow: 11px 5px 20px 0px #5c5b5b;
+    z-index: 1;
+    }
+    
+    #item2 {
+    grid-row-start: 1;
+    grid-row-end: 11;
+    height: 720px;
+    width: 400px;
+    box-shadow: 11px 5px 20px 0px #5c5b5b;
+    }
+    
+    #item3 {
+    width: 376px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 11px 5px 20px 0px #5c5b5b;
+    background-image: url(Wavy_Eco-01_Single-05.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    }
+    
+    #item5 {
+    box-shadow: 11px 5px 20px 0px #5c5b5b;
+    }
+    
+    .login-form {
+    width: 400px;
+    height: 410px;
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: rgba(255, 254, 255, 0.728);
+    }
+    
+    input[type="text"],
+    input[type="password"] {
+    width: 90%;
+    padding: 7px;
+    margin: auto;
+    display: block;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 15px;
+    }
+    
+    input[type="checkbox"] {
+    margin-left: 12px;
+    margin-top: 20px;
+    }
+    
+    label {
+    font-size: 16px;
+    }
+    
+    #forgot-password {
+    text-decoration: none;
+    margin-left: 130px;
+    color: #100088;
+    font-size: 16px;
+    }
+    
+    input[type="submit"] {
+    width: 95%;
+    margin: auto;
+    display: block;
+    padding: 10px;
+    font-size: 15px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 3px;
+    background-color: #08830a;
+    color: white;
+    margin-bottom: 7px;
+    }
+    
+    .login-form h4 {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 100;
+    
+    }
+    
+    .newuser {
+    text-decoration: none;
+    margin-left: 37%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 13px;
+    color: #0e0458;
+    }
+    
+    .socialmedia {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    }
+    
+    .socialmedia2 {
+    display: inline-flex;
+    width: 100%;
+    height: 50px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    }
+    
+    .links {
+    width: 110px;
+    height: 35px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 25px;
+    box-shadow: 0px 0px 8px rgb(0, 0, 0);
+    }
+    
+    .links a {
+    text-decoration: none;
+    color: white;
+    margin-top: 10px;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    }
+    .qlinks a {
+    text-decoration: none;
+    font-size: 25px;
+    color: #000000;
+    text-align: center;
+    padding: 9px;
+    }
+    
+    .second {
+    height: 300px;
+    background-color:green;
+    }
+    
+    .custom-shape-divider-top-1669678223 {
+    position: absolute;
+    top: 1085px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    }
+    
+    .custom-shape-divider-top-1669678223 svg {
+    position: relative;
+    display: block;
+    width: calc(148% + 1.3px);
+    height: 205px;
+    }
+    
+    .custom-shape-divider-top-1669678223 .shape-fill {
+    fill: #ffffff;
+    }
+    .fon{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .ptp{
+        background-image: url("electric image.jpg");
+        height: fit-content;
+    }
